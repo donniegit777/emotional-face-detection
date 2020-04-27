@@ -1,7 +1,3 @@
-#
-# Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-#
-
 import base64
 import json
 import logging
@@ -9,10 +5,8 @@ import logging
 from greengrasssdk import Lambda
 from greengrass_common.env_vars import SHADOW_FUNCTION_ARN, ROUTER_FUNCTION_ARN, MY_FUNCTION_ARN
 
-# Log messages in the SDK are part of customer's log because they're helpful for debugging
-# customer's lambdas. Since we configured the root logger to log to customer's log and set the
-# propagate flag of this logger to True. The log messages submitted from this logger will be
-# sent to the customer's local Cloudwatch handler.
+
+
 customer_logger = logging.getLogger(__name__)
 customer_logger.propagate = True
 
