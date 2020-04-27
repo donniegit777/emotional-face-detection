@@ -1,7 +1,3 @@
-#
-# Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-#
-
 import collections
 import functools
 import logging
