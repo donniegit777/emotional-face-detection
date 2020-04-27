@@ -1,7 +1,3 @@
-#
-# Copyright 2010-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-#
-
 import os
 
 AUTH_TOKEN = os.getenv('AWS_CONTAINER_AUTHORIZATION_TOKEN')
