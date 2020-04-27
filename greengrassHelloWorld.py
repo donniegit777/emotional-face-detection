@@ -1,4 +1,4 @@
-"""Lambda face detection sample. Very important step."""
+"""Lambda face detection sample. This is a very important step."""
 from threading import Thread, Event
 import os
 import json
