@@ -7,10 +7,8 @@ from greengrass_common.function_arn_fields import FunctionArnFields
 from greengrass_ipc_python_sdk.ipc_client import IPCClient, IPCException
 from greengrasssdk.utils.testing import mock
 
-# Log messages in the SDK are part of customer's log because they're helpful for debugging
-# customer's lambdas. Since we configured the root logger to log to customer's log and set the
-# propagate flag of this logger to True. The log messages submitted from this logger will be
-# sent to the customer's local Cloudwatch handler.
+
+
 customer_logger = logging.getLogger(__name__)
 customer_logger.propagate = True
 
